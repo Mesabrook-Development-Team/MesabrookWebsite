@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="/site.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <meta charset="UTF-8">
+    <title>How to Join - Mesabrook</title>
+</head>
+<body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+<MDINav></MDINav>
+<main>
+    <div class="section valign-wrapper blue lighten-2 white-text">
+        <div class="container">
+            <h2>Help and Support</h2>
+            <p>If you are experiencing any technical problems while trying to play on the Mesabrook server, please refer to this page for information.</p>
+        </div>
+    </div>
+    <div class="section valign-wrapper grey darken-3 white-text">
+        <div class="container">
+            <h3>Getting the Mesabrook Modpack</h3>
+            <p>If your computer is running Windows, you will need to use Mesabrook's official companion program (MesaSuite) to download our modpack.</p>
+            <div class="row">
+                <div class="col s12 m3"><a class="btn blue disabled full-width-btn" style="color: rgba(39,37,40,0.91)!important;"><i class="material-icons left">file_download</i> Get MesaSuite (Coming Soon!)</a></div>
+                <div class="col s12 m3"><a class="btn blue disabled full-width-btn" style="color: rgba(39,37,40,0.91)!important;"><i class="material-icons left">help</i> Using MesaSuite (Coming Soon!)</a></div>
+                <div class="col s12 m6"><a class="btn blue disabled full-width-btn" style="color: rgba(39,37,40,0.91)!important;"><i class="material-icons left">coffee</i> Download MCSync.jar (macOS/Linux) (Coming Soon!)</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="section valign-wrapper black-text">
+        <div class="container">
+            <h3>Unable to connect to Mesabrook or keep getting disconnected while playing.</h3>
+            <p>If you have difficulties joining the Mesabrook server, make sure that...</p>
+            <ul class="bullet-list">
+                <li>Your computer is connected to the Internet and is able to access Mesabrook.com</li>
+                <li>Your Internet connection can handle multiplayer gaming.</li>
+                <li>Your computer or network's firewall isn't configured to block gaming traffic or block port 25565.</li>
+            </ul>
+            <p>Make sure all of the Mesabrook Modpack's resource packs are enabled prior to joining.</p>
+        </div>
+    </div>
+    <div class="section valign-wrapper black-text">
+        <div class="container">
+            <h3>Crashing</h3>
+            <p>If you are experiencing Minecraft game crashes or Java Virtual Machine (JVM) crashes, please try the following...</p>
+            <ul class="bullet-list">
+                <li>Allocate more RAM to Minecraft.</li>
+                <li>Closing unnecessary programs when playing Minecraft.</li>
+                <li>Updating Java to the latest version of Java 8.</li>
+            </ul>
+            <p>When Minecraft crashes, it will usually generate a crash report text file stored inside your .minecraft folder. If you report a crash experienced while on Mesabrook to us, please include that crash report text file.</p>
+            <a href="https://minecraft.fandom.com/wiki/Tutorials/How_to_get_a_crash_report" class="btn blue btn-lower-case">How to find your crash-reports folder (Minecraft Wiki)</a>
+        </div>
+    </div>
+    <div class="section valign-wrapper black-text">
+        <div class="container">
+            <h3>Low Framerates</h3>
+            <p>If you are experiencing low framerates while playing on Mesabrook, please try the following...</p>
+            <ul class="bullet-list">
+                <li>Lower your Render Distance.</li>
+                <li>Set your Graphics to Fast.</li>
+            </ul>
+        </div>
+    </div>
+</main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.5.0/glide.min.js" integrity="sha512-sRTWzFH9u9XGU6qNUQ8eFE6s6FXl/2L/nRJVwigW92TW8kC4eZCWsIKZTdfkIrCRyE8j0GwkTg8p+H76drV/WQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.5.0/css/glide.core.min.css" integrity="sha512-tYKqO78H3mRRCHa75fms1gBvGlANz0JxjN6fVrMBvWL+vOOy200npwJ69OBl9XEsTu3yVUvZNrdWFIIrIf8FLg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script>
+
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.parallax');
+        var instances = M.Parallax.init(elems, {});
+    });
+</script>
+<MDIFooter></MDIFooter>
+<script>
+    // this is hacky template-non-template stuff
+    $('MDINav').load("/template/navbar.html")
+    $('MDIFooter').load("/template/footer.html")
+</script>
+</body>
+</html>
