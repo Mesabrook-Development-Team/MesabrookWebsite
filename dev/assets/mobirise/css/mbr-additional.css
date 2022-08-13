@@ -1372,7 +1372,7 @@ a {
 }
 .cid-tejzTqtUUA {
   padding-top: 2rem;
-  padding-bottom: 6rem;
+  padding-bottom: 4rem;
   background: #fafafa;
 }
 .cid-tejzTqtUUA .mbr-fallback-image.disabled {
@@ -1783,6 +1783,91 @@ a {
     width: 175%;
     max-width: calc(100% + 2rem);
     left: -1rem;
+  }
+}
+.cid-ter6dU0cQc {
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  background-color: #ffffff;
+}
+.cid-ter6dU0cQc .mbr-fallback-image.disabled {
+  display: none;
+}
+.cid-ter6dU0cQc .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.cid-ter6x3oElh {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-color: #fafafa;
+}
+.cid-ter6x3oElh .mbr-fallback-image.disabled {
+  display: none;
+}
+.cid-ter6x3oElh .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.cid-ter6x3oElh .card:not(:nth-last-child(1)) {
+  margin-bottom: 2rem;
+}
+.cid-ter6x3oElh .card-wrapper {
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+.cid-ter6x3oElh .image-wrapper img {
+  width: 100%;
+  object-fit: cover;
+}
+.cid-ter6x3oElh .social-row .soc-item {
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  margin-right: 0.6rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: 2px solid #6592e6;
+  transition: all 0.3s;
+}
+.cid-ter6x3oElh .social-row .soc-item .mbr-iconfont {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  color: #6592e6;
+  font-size: 1.5rem;
+  transition: all 0.3s;
+}
+.cid-ter6x3oElh .social-row .soc-item:hover {
+  background-color: #6592e6;
+}
+.cid-ter6x3oElh .social-row .soc-item:hover .mbr-iconfont {
+  color: #ffffff;
+}
+@media (max-width: 767px) {
+  .cid-ter6x3oElh .card-box {
+    padding: 1rem;
+  }
+}
+@media (min-width: 768px) {
+  .cid-ter6x3oElh .card-box {
+    padding-right: 2rem;
+  }
+}
+@media (min-width: 992px) {
+  .cid-ter6x3oElh .card-box {
+    padding-left: 2rem;
+    padding-right: 4rem;
   }
 }
 .cid-tekJBSkfB5 {
