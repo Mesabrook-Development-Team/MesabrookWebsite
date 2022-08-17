@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="/site.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <meta charset="UTF-8">
+    <title>Home - Mesabrook</title>
+</head>
+<body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+<MDINav></MDINav>
+<main>
+    <div class="glide" id="main-image-container">
+        <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+                <li class="glide__slide"><div class="main-image"><img src="/img/main/2021-05-04_15.03.38.png"></div></li>
+                <li class="glide__slide"><div class="main-image"><img src="/img/main/2021-07-05_23.06.42.png"></div></li>
+                <li class="glide__slide"><div class="main-image"><img src="/img/main/2021-08-30_22.07.00.png"></div></li>
+                <li class="glide__slide"><div class="main-image"><img src="/img/main/2021-09-26_23.41.12.png"></div></li>
+                <li class="glide__slide"><div class="main-image"><img src="/img/main/2021-10-06_17.16.38.png"></div></li>
+                <li class="glide__slide"><div class="main-image"><img src="/img/main/2021-10-06_17.17.03.png"></div></li>
+                <li class="glide__slide"><div class="main-image"><img src="/img/main/2021-10-06_17.17.13.png"></div></li>
+                <li class="glide__slide"><div class="main-image"><img src="/img/main/2021-10-06_17.17.29.png"></div></li>
+                <li class="glide__slide"><div class="main-image"><img src="/img/main/2021-10-06_17.18.18.png"></div></li>
+                <li class="glide__slide"><div class="main-image"><img src="/img/main/2021-10-06_17.18.25.png"></div></li>
+                <li class="glide__slide"><div class="main-image"><img src="/img/main/2021-10-09_23.03.29.png"></div></li>
+                <li class="glide__slide"><div class="main-image"><img src="/img/main/2021-10-09_23.03.291.png"></div></li>
+                <li class="glide__slide"><div class="main-image"><img src="/img/main/2021-10-13_00.55.46.png"></div></li>
+                <li class="glide__slide"><div class="main-image"><img src="/img/main/2021-10-31_14.43.43.png"></div></li>
+                <li class="glide__slide"><div class="main-image"><img src="/img/main/2021-11-02_14.47.56.png"></div></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="center">
+            <h3>What is Mesabrook?</h3>
+            <p class="flow-text">Mesabrook is a modded Minecraft 1.12.2 server that focuses on</p>
+            <div class="row">
+                <div class="col s12 m4">
+                    <i class="material-icons large icon-circle">public</i>
+
+                    <h4>Realism</h4>
+                    <p class="flow-text">Realistic roads, bridges, tracks and infrastructure. Mesabrook prides itself on  being a realistic as possible!</p>
+                </div>
+                <div class="col s12 m4">
+                    <i class="material-icons large icon-circle">layers</i>
+                    <h4>Logistics</h4>
+                    <p class="flow-text">Build and run your own business! Run trains and manage fleets of trucks! Mesabrook's realistic supply chain provides a great look into how the real world operates!</p>
+                </div>
+                <div class="col s12 m4">
+                    <i class="material-icons large icon-circle">military_tech</i>
+                    <h4>Diversity</h4>
+                    <p class="flow-text">Mesabrook can comfortably ​accommodate almost all playing styles.
+                        You can engage with the economy or rough it and live off the land. Mesabrook welcomes all!</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.5.0/glide.min.js" integrity="sha512-sRTWzFH9u9XGU6qNUQ8eFE6s6FXl/2L/nRJVwigW92TW8kC4eZCWsIKZTdfkIrCRyE8j0GwkTg8p+H76drV/WQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.5.0/css/glide.core.min.css" integrity="sha512-tYKqO78H3mRRCHa75fms1gBvGlANz0JxjN6fVrMBvWL+vOOy200npwJ69OBl9XEsTu3yVUvZNrdWFIIrIf8FLg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script>
+
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.parallax');
+        var instances = M.Parallax.init(elems, {});
+    });
+    new Glide('.glide',{
+        autoplay:3000
+    }).mount()
+</script>
+<MDIFooter></MDIFooter>
+<script>
+    // this is hacky template-non-template stuff
+    $('MDINav').load("/template/navbar.html")
+    $('MDIFooter').load("/template/footer.html")
+</script>
+</body>
+</html>
