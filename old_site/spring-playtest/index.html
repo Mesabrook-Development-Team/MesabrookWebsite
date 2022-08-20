@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="/site.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <meta charset="UTF-8">
+    <title>Spring Playtest - Mesabrook</title>
+</head>
+<body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+<MDINav></MDINav>
+<main>
+    <div class="section valign-wrapper blue darken-1 white-text">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m6">
+                    <h2 class="center-align">Apply for the Playtest!</h2>
+                    <p class="center-align">Click the button below to fill out an application to join us during Mesabrook's Golden Spike Ceremony Playtest!</p>
+                    <div class="center"><a class="btn green" href="https://forms.gle/E717K9tVAaaEstwQ9">APPLY NOW</a></div>
+                </div>
+                <div class="col s12 m6">
+                    <img src="/img/main/2021-07-05_23.06.42.png" class="responsive-img">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section valign-wrapper white">
+        <div class="container">
+            <div class="row center-align">
+                <h2>There will be lots of activities!</h2>
+                <p>Almost every part of Mesabrook will be open to all during the Playtest!</p>
+            </div>
+            <div class="row center">
+                <div class="col s12 m4">
+                    <i class="material-icons large">language</i>
+
+                    <h4>Explore</h4>
+                    <p class="flow-text">Each player will be assigned to their own vehicle. Explore! If you get stuck, use <i>MesaSuite</i> to use a Tow Ticket to get towed. Earn Tow Tickets by towing others!</p>
+                </div>
+                <div class="col s12 m4">
+                    <i class="material-icons large">phone_in_talk</i>
+                    <h4>Communications</h4>
+                    <p class="flow-text">Use the latest technology with <i>Minedroid</i>, our latest smartphone OS! Make phone calls to talk to your friends because they can't hear you from 5km away!</p>
+                </div>
+                <div class="col s12 m4">
+                    <i class="material-icons large">directions_run</i>
+                    <h4>Performance</h4>
+                    <p class="flow-text">Based on your last feedback, we have dramatically improved server performance. Let us know if it fits your needs!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section valign-wrapper blue darken-1 white-text">
+        <div class="container">
+            <h2>Feedback Please!</h2>
+            <p>During the Playtest, please be sure to provide as much feedback about your experience as possible!
+                Your feedback will be used to improve Mesabrook so that it'll be at its very best when it goes public fully!</p>
+            <p>Please be as concise and thorough as possible when providing feedback!</p>
+        </div>
+    </div>
+</main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.5.0/glide.min.js" integrity="sha512-sRTWzFH9u9XGU6qNUQ8eFE6s6FXl/2L/nRJVwigW92TW8kC4eZCWsIKZTdfkIrCRyE8j0GwkTg8p+H76drV/WQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.5.0/css/glide.core.min.css" integrity="sha512-tYKqO78H3mRRCHa75fms1gBvGlANz0JxjN6fVrMBvWL+vOOy200npwJ69OBl9XEsTu3yVUvZNrdWFIIrIf8FLg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script>
+
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.parallax');
+        var instances = M.Parallax.init(elems, {});
+    });
+</script>
+<MDIFooter></MDIFooter>
+<script>
+    // this is hacky template-non-template stuff
+    $('MDINav').load("/template/navbar.html")
+    $('MDIFooter').load("/template/footer.html")
+</script>
+</body>
+</html>
