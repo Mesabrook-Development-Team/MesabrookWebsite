@@ -1465,6 +1465,74 @@ a {
     padding-right: 4rem;
   }
 }
+.cid-tIH9oMrqwO {
+  padding-top: 2rem;
+  padding-bottom: 0rem;
+  background-color: #fafafa;
+}
+.cid-tIH9oMrqwO .mbr-fallback-image.disabled {
+  display: none;
+}
+.cid-tIH9oMrqwO .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.cid-tIH9oMrqwO .card:not(:nth-last-child(1)) {
+  margin-bottom: 2rem;
+}
+.cid-tIH9oMrqwO .card-wrapper {
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+.cid-tIH9oMrqwO .image-wrapper img {
+  width: 100%;
+  object-fit: cover;
+}
+.cid-tIH9oMrqwO .social-row .soc-item {
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  margin-right: 0.6rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: 2px solid #6592e6;
+  transition: all 0.3s;
+}
+.cid-tIH9oMrqwO .social-row .soc-item .mbr-iconfont {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  color: #6592e6;
+  font-size: 1.5rem;
+  transition: all 0.3s;
+}
+.cid-tIH9oMrqwO .social-row .soc-item:hover {
+  background-color: #6592e6;
+}
+.cid-tIH9oMrqwO .social-row .soc-item:hover .mbr-iconfont {
+  color: #ffffff;
+}
+@media (max-width: 767px) {
+  .cid-tIH9oMrqwO .card-box {
+    padding: 1rem;
+  }
+}
+@media (min-width: 768px) {
+  .cid-tIH9oMrqwO .card-box {
+    padding-right: 2rem;
+  }
+}
+@media (min-width: 992px) {
+  .cid-tIH9oMrqwO .card-box {
+    padding-left: 2rem;
+    padding-right: 4rem;
+  }
+}
 .cid-tnRxXkH7KX {
   padding-top: 2rem;
   padding-bottom: 6rem;
