@@ -77,7 +77,7 @@ law.fetchFail = function(xhr, error, detail)
 law.init = function()
 {
 	$.ajax({
-		url: 'http://localhost:58480/gov/Law/GetAll',
+		url: 'https://api.mesabrook.com/gov/Law/GetAll',
 		method: 'GET',
 		success: law.fetchSuccess,
 		error: law.fetchFail
