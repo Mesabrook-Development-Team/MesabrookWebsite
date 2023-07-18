@@ -5,22 +5,17 @@ law.fetchSuccess = function(data)
 	var lawsByGovernment = {};
 	law.lawsByID = {};
 	
+	var republicID = null;
 	data.forEach(function(item)
 	{
 		if (!Object.hasOwn(lawsByGovernment, item.GovernmentID))
 		{
 			if (item.Government.Name.toLowerCase() == "republic of mesabrook")
 			{
-				var topObject = {};
-				topObject[item.GovernmentID] = { name: item.Government.Name, laws: [] };
-				
-				Object.assign(topObject, lawsByGovernment);
-				lawsByGovernment = topObject;
+				republicID = item.GovernmentID;
 			}
-			else
-			{
-				lawsByGovernment[item.GovernmentID] = { name: item.Government.Name, laws: [] };
-			}
+			
+			lawsByGovernment[item.GovernmentID] = { name: item.Government.Name, laws: [] };
 		}
 		
 		var lawLite = { name: item.Name, displayOrder: item.DisplayOrder, lawID: item.LawID, sections: [] };
@@ -37,7 +32,7 @@ law.fetchSuccess = function(data)
 	});
 	
 	var navHTML = '<h3>Law Selection</h3><ul class="lawList">';
-	for(var key in lawsByGovernment)
+	var addGovLaws = function(key)
 	{
 		if (!Object.hasOwn(lawsByGovernment, key))
 		{
@@ -51,15 +46,32 @@ law.fetchSuccess = function(data)
 			navHTML = navHTML + '<li><button class="btn btn-link m-0 p-0 text-primary" style="text-decoration: none; text-align: left;" onclick="law.loadLaw(' + law.lawID + ');">' + law.name + '</button></li>';
 		});
 		navHTML = navHTML + '</ul></li>'
+	};
+	
+	if (republicID != null)
+	{
+		addGovLaws(republicID);
+	}
+	
+	for(var key in lawsByGovernment)
+	{
+		if (republicID != null && key == republicID)
+		{
+			continue;
+		}
+		
+		addGovLaws(key);
 	}
 	navHTML = navHTML + '</ul>';
 	
 	document.getElementById('LawNav').innerHTML = navHTML;
 };
 
-law.fetchFail = function(xhr, status, detail)
+law.fetchFail = function(xhr, error, detail)
 {
-	
+	var navElement = document.getElementById('LawNav');
+	navElement.innerHTML = '<p style="color: #dc3545">An error occurred while fetching laws: ' + error + ' ' + detail + '</p>';
+	document.getElementById('LawDetail').innerHTML = '';
 };
 
 law.init = function()
@@ -84,7 +96,7 @@ law.loadLaw = function(lawID)
 	var detailHTML = '<h3>Sections for <strong>' + lawLite.name + '</strong></h3>';
 	lawLite.sections.sort(function(a,b) { return a.displayOrder - b.displayOrder; }).forEach(function(section)
 	{
-		detailHTML = detailHTML + '<hr /><h4>' + section.title + '</h4><p>' + section.detail + '</p>';
+		detailHTML = detailHTML + '<hr /><h4>' + section.title + '</h4>' + MarkdownToHTML.convert(section.detail);
 	});
 	
 	lawDetailElement.innerHTML = detailHTML;
