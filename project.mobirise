@@ -62,6 +62,8 @@
       "underlineLink": true,
       "text": "<b>By continuing you agree to our <a href='tos.html'>Terms of Service</a></b>"
     },
+    "publishType": "local",
+    "publishPath": "@PROJECT_PATH@",
     "usedWebp": true
   },
   "pages": {
